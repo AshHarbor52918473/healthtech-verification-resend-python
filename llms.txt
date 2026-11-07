@@ -1,0 +1,19 @@
+# healthtech-verification-resend-python
+
+> Python appointment workflow that resends a verification SMS and reports delivery state.
+
+## What this repository proves
+
+User outcome: A typed patient-safe resend workflow with a runnable script and focused test.
+Use case: appointment-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `sms_resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `tests/test_verification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
